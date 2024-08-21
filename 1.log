@@ -1,0 +1,202 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.14)
+
+22:42:54.529 [main] INFO com.datang.konus.KonusApplication - Starting KonusApplication using Java 11.0.22 on aliandeMBP with PID 294 (/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar started by alian in /Users/alian/code/erp/java-konusoa_Release)
+22:42:54.530 [main] DEBUG com.datang.konus.KonusApplication - Running with Spring Boot, Spring
+22:42:54.532 [main] INFO com.datang.konus.KonusApplication - No active profile set, falling back to 1 default profile: "default"
+22:42:54.533 [main] DEBUG org.springframework.boot.SpringApplication - Loading source class com.datang.konus.KonusApplication
+22:42:54.562 [main] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3eb738bb
+22:42:54.566 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+22:42:54.593 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/comm/KonusRunner.class]
+22:42:54.596 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/comm/MyBatisPlusConfig.class]
+22:42:54.601 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/DisconnectionMapper.class]
+22:42:54.601 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/EntranceDetailMapper.class]
+22:42:54.602 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/GuardDeviceMapper.class]
+22:42:54.602 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/StaffMapper.class]
+22:42:54.602 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/SystemEntityIdentifierMapper.class]
+22:42:54.602 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/SystemEntityMapper.class]
+22:42:54.602 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/SystemSequenceMapper.class]
+22:42:54.603 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/SystemUserMapper.class]
+22:42:54.603 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/TimeClockDetailMapper.class]
+22:42:54.609 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/facade/service/DaHuaController.class]
+22:42:54.609 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/facade/service/PunchController.class]
+22:42:54.609 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/facade/service/UserController.class]
+22:42:54.610 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/DaHuaServImpl.class]
+22:42:54.610 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/DisconnectServImpl.class]
+22:42:54.610 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/EntranceDetailServiceImpl.class]
+22:42:54.611 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/FAnalyzerDataCB.class]
+22:42:54.611 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/FDisConnectCB.class]
+22:42:54.611 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/FHaveReConnect.class]
+22:42:54.611 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/MissHistoryServImpl.class]
+22:42:54.611 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/PunchDeviceServiceImpl.class]
+22:42:54.612 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/SystemSequenceServImpl.class]
+22:42:54.612 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/SystemUserServImpl.class]
+22:42:54.612 [main] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/core/service/impl/TimeClockDetailServImpl.class]
+22:42:54.810 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'com.datang.konus.KonusApplication#MapperScannerRegistrar#0'
+22:42:54.824 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+22:42:54.829 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+22:42:54.833 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/DisconnectionMapper.class]
+22:42:54.833 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/EasyBaseMapper.class]
+22:42:54.833 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/EntranceDetailMapper.class]
+22:42:54.833 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/GuardDeviceMapper.class]
+22:42:54.833 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/StaffMapper.class]
+22:42:54.833 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/SystemEntityIdentifierMapper.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/SystemEntityMapper.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/SystemSequenceMapper.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/SystemUserMapper.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/TimeClockDetailMapper.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/entity/DisconnectionEntity.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/entity/EntranceDetailEntity.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/entity/GuardDeviceEntity.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/entity/StaffEntity.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/entity/SystemEntityEntity.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/entity/SystemEntityIdentifierEntity.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/entity/SystemSequenceEntity.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/entity/SystemUserEntity.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/entity/TimeClockDetailEntity.class]
+22:42:54.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'disconnectionMapper' and 'com.datang.konus.mapper.dao.DisconnectionMapper' mapperInterface
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'disconnectionMapper'.
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'easyBaseMapper' and 'com.datang.konus.mapper.dao.EasyBaseMapper' mapperInterface
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'easyBaseMapper'.
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'entranceDetailMapper' and 'com.datang.konus.mapper.dao.EntranceDetailMapper' mapperInterface
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'entranceDetailMapper'.
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'guardDeviceMapper' and 'com.datang.konus.mapper.dao.GuardDeviceMapper' mapperInterface
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'guardDeviceMapper'.
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'staffMapper' and 'com.datang.konus.mapper.dao.StaffMapper' mapperInterface
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'staffMapper'.
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'systemEntityIdentifierMapper' and 'com.datang.konus.mapper.dao.SystemEntityIdentifierMapper' mapperInterface
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'systemEntityIdentifierMapper'.
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'systemEntityMapper' and 'com.datang.konus.mapper.dao.SystemEntityMapper' mapperInterface
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'systemEntityMapper'.
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'systemSequenceMapper' and 'com.datang.konus.mapper.dao.SystemSequenceMapper' mapperInterface
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'systemSequenceMapper'.
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'systemUserMapper' and 'com.datang.konus.mapper.dao.SystemUserMapper' mapperInterface
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'systemUserMapper'.
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'timeClockDetailMapper' and 'com.datang.konus.mapper.dao.TimeClockDetailMapper' mapperInterface
+22:42:54.835 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'timeClockDetailMapper'.
+22:42:54.870 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
+22:42:54.872 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+22:42:54.873 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+22:42:54.873 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+22:42:54.874 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+22:42:54.875 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+22:42:54.876 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+22:42:54.876 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+22:42:54.876 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+22:42:54.877 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+22:42:54.889 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+22:42:54.895 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+22:42:54.899 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'konusApplication'
+22:42:54.899 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+22:42:54.899 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+22:42:54.912 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionAttributeSource'
+22:42:54.914 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionInterceptor'
+22:42:54.914 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+22:42:54.916 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+22:42:54.916 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+22:42:54.917 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'konusRunner'
+22:42:54.918 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'daHuaServImpl'
+22:42:54.921 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'FDisConnectCB'
+22:42:54.921 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'disconnectServImpl'
+22:42:54.922 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'disconnectionMapper'
+22:42:54.925 [main] WARN org.springframework.context.annotation.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'konusRunner': Unsatisfied dependency expressed through field 'daHuaService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'daHuaServImpl': Unsatisfied dependency expressed through field 'm_DisConnectCB'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'FDisConnectCB': Unsatisfied dependency expressed through field 'disconnectService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'disconnectServImpl': Unsatisfied dependency expressed through field 'disconnectionMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'disconnectionMapper' defined in URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/DisconnectionMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+22:42:54.927 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'konusRunner': Unsatisfied dependency expressed through field 'daHuaService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'daHuaServImpl': Unsatisfied dependency expressed through field 'm_DisConnectCB'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'FDisConnectCB': Unsatisfied dependency expressed through field 'disconnectService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'disconnectServImpl': Unsatisfied dependency expressed through field 'disconnectionMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'disconnectionMapper' defined in URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/DisconnectionMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:662)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.datang.konus.KonusApplication.main(KonusApplication.java:16)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'daHuaServImpl': Unsatisfied dependency expressed through field 'm_DisConnectCB'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'FDisConnectCB': Unsatisfied dependency expressed through field 'disconnectService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'disconnectServImpl': Unsatisfied dependency expressed through field 'disconnectionMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'disconnectionMapper' defined in URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/DisconnectionMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:662)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'FDisConnectCB': Unsatisfied dependency expressed through field 'disconnectService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'disconnectServImpl': Unsatisfied dependency expressed through field 'disconnectionMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'disconnectionMapper' defined in URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/DisconnectionMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:662)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'disconnectServImpl': Unsatisfied dependency expressed through field 'disconnectionMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'disconnectionMapper' defined in URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/DisconnectionMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:662)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:642)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'disconnectionMapper' defined in URL [jar:file:/Users/alian/code/erp/java-konusoa_Release/java-konusoa_Release.jar!/com/datang/konus/mapper/dao/DisconnectionMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	... 61 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.mybatis.spring.support.SqlSessionDaoSupport.checkDaoConfig(SqlSessionDaoSupport.java:122)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:73)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 71 common frames omitted

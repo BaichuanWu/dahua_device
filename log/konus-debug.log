@@ -1,0 +1,52 @@
+2024-06-19 23:43:45,147 INFO  com.datang.konus.KonusApplication -[logStarting][55]:  Starting KonusApplication v0.0.1 using Java 11.0.22 on aliandeMBP with PID 32877 (/Users/alian/code/erp/java-konusoa_Release/target/konus-0.0.1.jar started by alian in /Users/alian/code/erp/java-konusoa_Release)
+2024-06-19 23:43:45,149 INFO  com.datang.konus.KonusApplication -[logStartupProfileInfo][637]:  The following 1 profile is active: "prod"
+2024-06-19 23:43:45,787 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -[initialize][108]:  Tomcat initialized with port(s): 65502 (http)
+2024-06-19 23:43:45,794 INFO  org.apache.coyote.http11.Http11NioProtocol -[log][173]:  Initializing ProtocolHandler ["http-nio-65502"]
+2024-06-19 23:43:45,795 INFO  org.apache.catalina.core.StandardService -[log][173]:  Starting service [Tomcat]
+2024-06-19 23:43:45,796 INFO  org.apache.catalina.core.StandardEngine -[log][173]:  Starting Servlet engine: [Apache Tomcat/9.0.78]
+2024-06-19 23:43:45,874 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -[log][173]:  Initializing Spring embedded WebApplicationContext
+2024-06-19 23:43:45,875 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext -[prepareWebApplicationContext][292]:  Root WebApplicationContext: initialization completed in 700 ms
+2024-06-19 23:43:46,050 INFO  com.alibaba.druid.pool.DruidDataSource -[init][983]:  {dataSource-1,konusoa} inited
+2024-06-19 23:43:46,051 INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource -[addDataSource][148]:  dynamic-datasource - add a datasource named [konusoa] success
+2024-06-19 23:43:46,051 INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource -[afterPropertiesSet][228]:  dynamic-datasource initial loaded [1] datasource,primary datasource named [konusoa]
+2024-06-19 23:43:46,109 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableIdWithoutAnnotation][445]:  This "id" is the table primary key by default name for `id` in Class: "com.datang.konus.mapper.entity.SystemEntityIdentifierEntity",So @TableField will not work!
+2024-06-19 23:43:46,162 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableIdWithoutAnnotation][445]:  This "id" is the table primary key by default name for `id` in Class: "com.datang.konus.mapper.entity.DisconnectionEntity",So @TableField will not work!
+2024-06-19 23:43:46,200 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableFields][342]:  Can not find table primary key in Class: "com.datang.konus.mapper.entity.SystemSequenceEntity".
+2024-06-19 23:43:46,201 WARN  com.datang.konus.comm.EasySqlInjector -[getMethodList][56]:  class com.datang.konus.mapper.entity.SystemSequenceEntity ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-06-19 23:43:46,217 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableIdWithoutAnnotation][445]:  This "id" is the table primary key by default name for `id` in Class: "com.datang.konus.mapper.entity.SystemEntityEntity",So @TableField will not work!
+2024-06-19 23:43:46,237 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableIdWithoutAnnotation][445]:  This "id" is the table primary key by default name for `id` in Class: "com.datang.konus.mapper.entity.SystemUserEntity",So @TableField will not work!
+2024-06-19 23:43:46,265 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableIdWithoutAnnotation][445]:  This "id" is the table primary key by default name for `id` in Class: "com.datang.konus.mapper.entity.TimeClockDetailEntity",So @TableField will not work!
+2024-06-19 23:43:46,543 INFO  org.apache.coyote.http11.Http11NioProtocol -[log][173]:  Starting ProtocolHandler ["http-nio-65502"]
+2024-06-19 23:43:46,578 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -[start][220]:  Tomcat started on port(s): 65502 (http) with context path ''
+2024-06-19 23:43:46,584 INFO  com.datang.konus.KonusApplication -[logStarted][61]:  Started KonusApplication in 1.748 seconds (JVM running for 1.971)
+2024-06-19 23:43:46,585 INFO  com.datang.konus.comm.KonusRunner -[run][31]:  读取设备配置，并完成登录
+2024-06-19 23:43:50,134 INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource -[destroy][205]:  dynamic-datasource start closing ....
+2024-06-19 23:43:50,137 INFO  com.alibaba.druid.pool.DruidDataSource -[close][2024]:  {dataSource-1} closing ...
+2024-06-19 23:43:50,138 INFO  com.alibaba.druid.pool.DruidDataSource -[close][2096]:  {dataSource-1} closed
+2024-06-19 23:43:50,138 INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource -[destroy][209]:  dynamic-datasource all closed success,bye
+2024-06-19 23:44:06,448 INFO  com.datang.konus.KonusApplication -[logStarting][55]:  Starting KonusApplication v0.0.1 using Java 11.0.22 on aliandeMBP with PID 33029 (/Users/alian/code/erp/java-konusoa_Release/target/konus-0.0.1.jar started by alian in /Users/alian/code/erp/java-konusoa_Release)
+2024-06-19 23:44:06,450 INFO  com.datang.konus.KonusApplication -[logStartupProfileInfo][637]:  The following 1 profile is active: "prod"
+2024-06-19 23:44:07,105 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -[initialize][108]:  Tomcat initialized with port(s): 65502 (http)
+2024-06-19 23:44:07,111 INFO  org.apache.coyote.http11.Http11NioProtocol -[log][173]:  Initializing ProtocolHandler ["http-nio-65502"]
+2024-06-19 23:44:07,112 INFO  org.apache.catalina.core.StandardService -[log][173]:  Starting service [Tomcat]
+2024-06-19 23:44:07,112 INFO  org.apache.catalina.core.StandardEngine -[log][173]:  Starting Servlet engine: [Apache Tomcat/9.0.78]
+2024-06-19 23:44:07,152 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -[log][173]:  Initializing Spring embedded WebApplicationContext
+2024-06-19 23:44:07,152 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext -[prepareWebApplicationContext][292]:  Root WebApplicationContext: initialization completed in 676 ms
+2024-06-19 23:44:07,335 INFO  com.alibaba.druid.pool.DruidDataSource -[init][983]:  {dataSource-1,konusoa} inited
+2024-06-19 23:44:07,336 INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource -[addDataSource][148]:  dynamic-datasource - add a datasource named [konusoa] success
+2024-06-19 23:44:07,337 INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource -[afterPropertiesSet][228]:  dynamic-datasource initial loaded [1] datasource,primary datasource named [konusoa]
+2024-06-19 23:44:07,395 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableIdWithoutAnnotation][445]:  This "id" is the table primary key by default name for `id` in Class: "com.datang.konus.mapper.entity.SystemEntityIdentifierEntity",So @TableField will not work!
+2024-06-19 23:44:07,444 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableIdWithoutAnnotation][445]:  This "id" is the table primary key by default name for `id` in Class: "com.datang.konus.mapper.entity.DisconnectionEntity",So @TableField will not work!
+2024-06-19 23:44:07,482 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableFields][342]:  Can not find table primary key in Class: "com.datang.konus.mapper.entity.SystemSequenceEntity".
+2024-06-19 23:44:07,482 WARN  com.datang.konus.comm.EasySqlInjector -[getMethodList][56]:  class com.datang.konus.mapper.entity.SystemSequenceEntity ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-06-19 23:44:07,499 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableIdWithoutAnnotation][445]:  This "id" is the table primary key by default name for `id` in Class: "com.datang.konus.mapper.entity.SystemEntityEntity",So @TableField will not work!
+2024-06-19 23:44:07,521 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableIdWithoutAnnotation][445]:  This "id" is the table primary key by default name for `id` in Class: "com.datang.konus.mapper.entity.SystemUserEntity",So @TableField will not work!
+2024-06-19 23:44:07,545 WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper -[initTableIdWithoutAnnotation][445]:  This "id" is the table primary key by default name for `id` in Class: "com.datang.konus.mapper.entity.TimeClockDetailEntity",So @TableField will not work!
+2024-06-19 23:44:07,807 INFO  org.apache.coyote.http11.Http11NioProtocol -[log][173]:  Starting ProtocolHandler ["http-nio-65502"]
+2024-06-19 23:44:07,819 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer -[start][220]:  Tomcat started on port(s): 65502 (http) with context path ''
+2024-06-19 23:44:07,825 INFO  com.datang.konus.KonusApplication -[logStarted][61]:  Started KonusApplication in 1.715 seconds (JVM running for 1.933)
+2024-06-19 23:44:07,826 INFO  com.datang.konus.comm.KonusRunner -[run][31]:  读取设备配置，并完成登录
+2024-06-19 23:44:16,619 INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource -[destroy][205]:  dynamic-datasource start closing ....
+2024-06-19 23:44:16,621 INFO  com.alibaba.druid.pool.DruidDataSource -[close][2024]:  {dataSource-1} closing ...
+2024-06-19 23:44:16,622 INFO  com.alibaba.druid.pool.DruidDataSource -[close][2096]:  {dataSource-1} closed
+2024-06-19 23:44:16,623 INFO  com.baomidou.dynamic.datasource.DynamicRoutingDataSource -[destroy][209]:  dynamic-datasource all closed success,bye

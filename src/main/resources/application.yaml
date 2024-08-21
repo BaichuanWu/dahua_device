@@ -1,5 +1,5 @@
 server:
-  port: 65502
+  port: 65512
 
 logging:
   config: classpath:logbacks.xml
@@ -20,9 +20,9 @@ spring:
 #          url: jdbc:mysql://124.160.106.234:3306/konusoa_234?useUnicode=true&characterEncoding=utf-8&useSSL=true
 #          username: konusoa
 #          password: konusoa@2023
-          url: jdbc:mysql://localhost:3306/konus_oa?useUnicode=true&characterEncoding=utf-8&useSSL=true
-          username: konusoa
-          password: Konusoa@2023
+          url: jdbc:mysql://172.168.1.23:3306/dev_oa?useUnicode=true&characterEncoding=utf-8&useSSL=true
+          username: konus
+          password: konus123
       initial-size: 10
       max-active: 100
       min-idle: 10

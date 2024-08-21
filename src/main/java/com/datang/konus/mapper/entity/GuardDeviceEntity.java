@@ -12,7 +12,7 @@ import java.math.BigInteger;
  * @since 2023/8/31
  */
 @Data
-@TableName("basedata$guarddevice")
+@TableName("attendance_device")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class GuardDeviceEntity {
     BigInteger id;

@@ -19,7 +19,7 @@
         <log4.version>2.15.0</log4.version>
         <myplus.version>3.5.1</myplus.version>
         <druid.version>1.1.23</druid.version>
-        <lombok.version>1.18.22</lombok.version>
+        <lombok.version>1.18.30</lombok.version>
         <mysql.version>8.0.29</mysql.version>
     </properties>
     <dependencies>

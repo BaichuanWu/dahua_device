@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Accessors(chain = true)
-@TableName("attendance$entrancedetail")
+@TableName("attendance_device_record")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class EntranceDetailEntity {
 
