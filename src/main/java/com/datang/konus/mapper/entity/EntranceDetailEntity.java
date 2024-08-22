@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import lombok.experimental.FieldDefaults;
+import com.baomidou.mybatisplus.annotation.TableField;
 
 import java.math.BigInteger;
 import java.time.LocalDateTime;
@@ -21,42 +22,13 @@ import java.time.LocalDateTime;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class EntranceDetailEntity {
 
-  BigInteger id;
-
-  
-  String personcode;
-
-  
-  String personname;
-
-  
-  String employeeid;
-
-  
-  String guarddevicecode;
-
-  
-  String guarddevicealias;
-
-  
+  Long id;
+  @TableField("device_id")
+  Long deviceId;
   String location;
+  @TableField("punch_time")
+  LocalDateTime patchtime;
 
-  
-  LocalDateTime patchdate;
-
-  
-  String datemark;
-
-  
-  LocalDateTime createddate;
-
-  
-  LocalDateTime changeddate;
-
-
-  BigInteger system$owner;
-
-
-  BigInteger system$changedby;
-
+  @TableField("employee_card_no")
+  String cardNo;
 }

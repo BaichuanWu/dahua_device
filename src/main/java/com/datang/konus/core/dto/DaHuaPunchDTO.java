@@ -19,5 +19,7 @@ public class DaHuaPunchDTO {
 
     private Integer deviceId;
 
+    private Long dId;
+
     String location;
 }

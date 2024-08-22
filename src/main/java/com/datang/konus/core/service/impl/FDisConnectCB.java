@@ -1,10 +1,10 @@
 package com.datang.konus.core.service.impl;
 
-import com.datang.konus.core.service.DisconnectService;
+// import com.datang.konus.core.service.DisconnectService;
 import com.netsdk.lib.NetSDKLib;
 import com.sun.jna.Pointer;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,11 +14,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class FDisConnectCB implements NetSDKLib.fDisConnect {
 
-    @Autowired
-    DisconnectService disconnectService;
+    // @Autowired
+    // DisconnectService disconnectService;
 
     public void invoke(NetSDKLib.LLong lLoginID, String pchDVRIP, int nDVRPort, Pointer dwUser) {
         log.info("Device[%s] Port[%d] Disconnect!\n", pchDVRIP, nDVRPort);
-        disconnectService.doRecord(lLoginID.longValue(),true);
+        // disconnectService.doRecord(lLoginID.longValue(),true);
     }
 }

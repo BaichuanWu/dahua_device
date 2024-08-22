@@ -6,7 +6,8 @@ import lombok.Data;
 public class PunchDeviceDTO {
 
     // 设备信息
-    private Integer DeviceIndex;
+    private Long dId;
+    private String DeviceIndex;
     private String DeviceIP ;
     private int Port = 37777;   //37777
     private String LogInUser ;

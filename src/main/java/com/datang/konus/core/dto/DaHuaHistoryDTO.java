@@ -1,11 +1,11 @@
-package com.datang.konus.core.dto;
+// package com.datang.konus.core.dto;
 
-import lombok.Data;
+// import lombok.Data;
 
-@Data
-public class DaHuaHistoryDTO {
+// @Data
+// public class DaHuaHistoryDTO {
 
-    private PunchDeviceDTO deviceDTO;
+//     private PunchDeviceDTO deviceDTO;
 
-    private DaHuaMissDTO missDTO;
-}
+//     private DaHuaMissDTO missDTO;
+// }

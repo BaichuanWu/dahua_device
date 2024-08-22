@@ -30,6 +30,8 @@ public class FAnalyzerDataCB implements NetSDKLib.fAnalyzerDataCallBack {
     private TimeClockDetailService clockDetailService;
     @Autowired
     private PunchDeviceService punchDeviceService;
+    
+    String zone = "Asia/Shanghai";
 
     @Override
     public int invoke(NetSDKLib.LLong lAnalyzerHandle,
@@ -66,7 +68,7 @@ public class FAnalyzerDataCB implements NetSDKLib.fAnalyzerDataCallBack {
                 NetSDKLib.NET_TIME_EX date = msg.RealUTC;
                 Instant instant = Instant.ofEpochSecond(date.dwUTC);
                 // 将Instant对象转换为LocalDateTime对象
-                LocalDateTime datetime = LocalDateTime.ofInstant(instant, ZoneId.of("UTC"));
+                LocalDateTime datetime = LocalDateTime.ofInstant(instant, ZoneId.of(zone));
                 log.info("时间秒数：" + msg.RealUTC.dwUTC);
                 log.info("时间格式：" + msg.RealUTC.toStringTime());
                 log.info("datetime：" + datetime);
@@ -82,7 +84,7 @@ public class FAnalyzerDataCB implements NetSDKLib.fAnalyzerDataCallBack {
                     log.info("szCardName:" + Arrays.toString(msg.szCardName));
                     log.info("msg:" + new String(msg.szCardName, StandardCharsets.UTF_8));
                     log.error("读取时间异常取当前时间：用户人：{}", new String(msg.szCardName, StandardCharsets.UTF_8).trim());
-                    datetime = LocalDateTime.now(ZoneId.of("UTC"));
+                    datetime = LocalDateTime.now(ZoneId.of(zone));
                 }
                 daHuaPunchDTO.setPunchTime(datetime);
                 daHuaPunchDTO.setRecordId(null);
@@ -93,11 +95,12 @@ public class FAnalyzerDataCB implements NetSDKLib.fAnalyzerDataCallBack {
                 //daHuaPunchDTO.setDeviceId(Integer.valueOf(new String(msg.szDeviceID).trim()));
                 daHuaPunchDTO.setDeviceId(Integer.valueOf(new String(msg.szReaderID).trim()));
                 log.info("msg:" + new String(msg.szDeviceID));
-                log.info("进门且刷卡成功事件->daHuaPunchDTO:{}", daHuaPunchDTO);
                 PunchDeviceDTO punchDeviceDTO=punchDeviceService.getByRealLoadHandle(lAnalyzerHandle.longValue());
                 if (punchDeviceDTO != null) {
                     daHuaPunchDTO.setLocation(punchDeviceDTO.getLocation());
+                    daHuaPunchDTO.setDId(punchDeviceDTO.getDId());
                 }
+                log.info("进门且刷卡成功事件->daHuaPunchDTO:{}", daHuaPunchDTO);
                 clockDetailService.doRecord(List.of(daHuaPunchDTO));
                 log.info("进门且刷卡成功事件处理完毕");
             }

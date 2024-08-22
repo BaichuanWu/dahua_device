@@ -14,8 +14,6 @@ import com.netsdk.lib.ToolKits;
 import com.netsdk.lib.enumeration.EM_EVENT_IVS_TYPE;
 import com.netsdk.lib.enumeration.ENUMERROR;
 import com.sun.jna.Memory;
-import com.sun.jna.Pointer;
-import com.sun.jna.ptr.IntByReference;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,7 +26,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 import static com.netsdk.lib.ToolKits.getErrorCode;
@@ -62,6 +59,7 @@ public class DaHuaServImpl implements DaHuaService {
         return deviceList.stream().map(item -> {
             PunchDeviceDTO dto = new PunchDeviceDTO();
             dto.setDeviceIndex(item.getDeviceid());
+            dto.setDId(item.getId());
             dto.setLogInUser(item.getGdlogin());
             dto.setLogInPwd(item.getGdpaswd());
             dto.setDeviceIP(item.getGdip());
@@ -69,24 +67,6 @@ public class DaHuaServImpl implements DaHuaService {
             dto.setLocation(item.getLocation());
             return dto;
         }).collect(Collectors.toList());
-
-        /*List<String> ipList = List.of("172.168.20.10", "172.16.1.250");
-
-
-        List<PunchDeviceDTO> punchDevices = new ArrayList<>();
-        int index = 1;
-        for (String ip : ipList) {
-            PunchDeviceDTO punchDevice = new PunchDeviceDTO();
-            punchDevice.setDeviceIndex(index++);
-            punchDevice.setDeviceIP(ip);
-            punchDevice.setPort(37777);
-            punchDevice.setLogInUser("admin");
-            punchDevice.setLogInPwd("konus123");
-            punchDevices.add(punchDevice);
-        }
-        //TDO: 后期该从mendix里读取
-
-        return punchDevices;*/
     }
 
     public PunchDeviceDTO doLogin(PunchDeviceDTO punchDeviceDTO) {
@@ -96,25 +76,7 @@ public class DaHuaServImpl implements DaHuaService {
 
         //初始化SDK库
         DaHuaModule.netsdkApi.CLIENT_Init(m_DisConnectCB, null);
-        /*NetSDKLib.LOG_SET_PRINT_INFO setLog = new NetSDKLib.LOG_SET_PRINT_INFO();
-        File path = new File("D:\\data\\sdklog\\");
-        if (!path.exists()) {
-            path.mkdir();
-        }
-        String logPath = path.getAbsoluteFile().getParent() + "\\sdklog\\"
-                + ".log";
-        setLog.nPrintStrategy = 0;
-        setLog.bSetFilePath = 1;
-        System.arraycopy(logPath.getBytes(), 0, setLog.szLogFilePath, 0,
-                logPath.getBytes().length);
-        System.out.println(logPath);
-        setLog.bSetPrintStrategy = 1;
-        Boolean bLogopen = DaHuaModule.netsdkApi.CLIENT_LogOpen(setLog);
-        if (!bLogopen) {
-            System.err.println("Failed to open NetSDK log");
-        }*/
 
-        // 设置断线重连回调接口，设置过断线重连成功回调函数后，当设备出现断线情况，SDK内部会自动进行重连操作
         // 此操作为可选操作，但建议用户进行设置
         DaHuaModule.netsdkApi.CLIENT_SetAutoReconnect(haveReConnect, null);
 
@@ -129,15 +91,9 @@ public class DaHuaServImpl implements DaHuaService {
         netParam.nConnectTime = 10000; //登录时尝试建立链接的超时时间
         DaHuaModule.netsdkApi.CLIENT_SetNetworkParam(netParam);
 
-        // 向设备登入
-        int nSpecCap = 0;
-        Pointer pCapParam = null;
-        IntByReference nError = new IntByReference(0);
-        NetSDKLib.NET_DEVICEINFO_Ex deviceinfo = new NetSDKLib.NET_DEVICEINFO_Ex();
 
         try {
 
-            //NetSDKLib.LLong loginHandle = DaHuaModule.netsdkApi.CLIENT_LoginEx2(punchDeviceDTO.getDeviceIP(), punchDeviceDTO.getPort(), punchDeviceDTO.getLogInUser(), punchDeviceDTO.getLogInPwd(), nSpecCap, pCapParam, deviceinfo, nError);
             NetSDKLib.NET_IN_LOGIN_WITH_HIGHLEVEL_SECURITY pstInParam =
                     new NetSDKLib.NET_IN_LOGIN_WITH_HIGHLEVEL_SECURITY();
             pstInParam.szIP = punchDeviceDTO.getDeviceIP().getBytes(StandardCharsets.UTF_8);
@@ -148,7 +104,7 @@ public class DaHuaServImpl implements DaHuaService {
                     new NetSDKLib.NET_OUT_LOGIN_WITH_HIGHLEVEL_SECURITY();
             NetSDKLib.LLong loginHandle = DaHuaModule.netsdkApi.CLIENT_LoginWithHighLevelSecurity(pstInParam, pstOutParam);
             if (loginHandle.longValue() != 0L) {
-                log.info("Login Device {} Port {} Success!", punchDeviceDTO.getDeviceIP(), punchDeviceDTO.getPort());
+                log.info("Login id {} Device {} Port {} Success!",punchDeviceDTO.getDId(), punchDeviceDTO.getDeviceIP(), punchDeviceDTO.getPort());
                 punchDeviceDTO.setLoginHandle(loginHandle.longValue());
             } else {
                 log.info("Login Device {} Port {} errCode:{}!", punchDeviceDTO.getDeviceIP(), punchDeviceDTO.getPort(), getErrorCode());
