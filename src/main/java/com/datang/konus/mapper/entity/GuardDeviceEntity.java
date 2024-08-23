@@ -11,7 +11,7 @@ import lombok.experimental.FieldDefaults;
  * @since 2023/8/31
  */
 @Data
-@TableName("attendance_device")
+@TableName("attendance_guard_device")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class GuardDeviceEntity {
     Long id;

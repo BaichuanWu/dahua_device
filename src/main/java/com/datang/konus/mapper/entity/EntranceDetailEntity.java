@@ -8,7 +8,6 @@ import lombok.experimental.Accessors;
 import lombok.experimental.FieldDefaults;
 import com.baomidou.mybatisplus.annotation.TableField;
 
-import java.math.BigInteger;
 import java.time.LocalDateTime;
 
 /**
@@ -18,7 +17,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Accessors(chain = true)
-@TableName("attendance_device_record")
+@TableName("attendance_guard_record")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class EntranceDetailEntity {
 
